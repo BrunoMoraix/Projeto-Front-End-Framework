@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+} 
+/*modo dark texto*/
+body.dark{
+    background-color: #e4e4e4; 
+}
+body.dark .link {
+    color: black;
+}
+body.dark h2{
+    color: black;
+}
+body.dark p{
+    color: black;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+#solzinho{
+    width: 20px;
+}
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0.5rem;
+    position: relative;
+}
+.link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.6s ease;
+}
+.link::before {
+    bottom: 0;
+    left: 0;
+}
+.link:hover::before {
+    transform: scaleX(1);
+}
+.trilho{
+    width: 45px;
+    height: 25px;
+    background-color:   #3a3a3a;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.trilho .indicador{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transform: scale(.8);
+    position: absolute;
+    left: 0;
+    transition: .3s;
+}
+.trilho.dark{
+    background-color: #cdcdce;
+}
+.trilho.dark .indicador{
+    left: 20px;
+    background-color: white;
+}
+p{
+    color: white;
+}
+b{
+    color: red;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.container h3 {
+    color: #ff0000;
+}
+
+.container p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+   footer.dark{
+       color: black;    
+}

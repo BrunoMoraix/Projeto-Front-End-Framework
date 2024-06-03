@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho</title>
+  <link rel="stylesheet" href="contatoStyle.css">
+</head>
+<body>
+
+  <div>
+    <ul>
+        <li><a href="index.html" class="link">Home</a></li>
+        <li><a href="Galeria.html" class="link">Galeria</a></li>
+        <li><a href="Contato.html" target="_self" class="link">Contato</a></li>
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
+        <div><img src="Imagens/9025960_sun_icon.png" id="solzinho"></div>
+    </ul>
+    
+  </div>
+ 
+  <div class="container">
+    <h2>Cadastro e Opiniões</h2>
+    <form id="cadastroForm">
+      
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required placeholder="nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email">
+
+        <label for="senha">Senha:</label>
+        <input type="text" id="senha" name="senha" required
+        placeholder="Senha">
+
+
+        <label for="mensagem">Sua opinião sobre o site:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" 
+        required placeholder="Escreva sua opnião aqui"></textarea>
+
+
+        <input type="submit" value="Enviar">
+    </form>
+<script src="contatoScript.js"></script>
+</body>
+</html>
